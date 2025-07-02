@@ -45,11 +45,14 @@ function TodoInput({ todoList, setTodoList }) {
 
 function TodoList({ todoList, setTodoList }) {
   return (
-    <ul>
-      {todoList.map((todo) => (
-        <Todo key={todo.id} todo={todo} setTodoList={setTodoList} />
-      ))}
-    </ul>
+    <>
+      <h1 className="title">𝑻𝒐𝒅𝒐 - 𝑳𝒊𝒔𝒕</h1>
+      <ul>
+        {todoList.map((todo) => (
+          <Todo key={todo.id} todo={todo} setTodoList={setTodoList} />
+        ))}
+      </ul>
+    </>
   );
 }
 
